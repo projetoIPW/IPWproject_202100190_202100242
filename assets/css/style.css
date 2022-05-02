@@ -15,7 +15,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 	color:#a09e9c;
-	background: #fff;
+	background: #dfd2c3;
     text-transform: capitalize;
     max-width:1920px;
     margin:0 auto;
@@ -82,7 +82,7 @@ img.logo{
 }
 
 nav.navbar.bootsnav {
-    background-color: transparent;
+    background-color: #dfd2c3;
     border-bottom: transparent;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
