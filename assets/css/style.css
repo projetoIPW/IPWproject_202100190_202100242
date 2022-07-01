@@ -14,7 +14,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
-	color:#a09e9c;
+	color:#B4CEFF;
 	background: #d6e4ff;
     text-transform: capitalize;
     max-width:1920px;
@@ -24,15 +24,19 @@ body{
 	overflow-x:hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#5f5b57;
+	color:#004AAD;
     font-size: 18px;
     font-weight: 500;
 }
 p {
 	margin: 0;
-	color:#a09e9c;
+	color:#84adfa;
 	font-size:16px;
     line-height: 1.8;
 }
@@ -147,87 +151,61 @@ main{
 /*-------------------------------------
        Categories
 --------------------------------------*/
-.categories {padding:85px 0 70px;}
-.categories-content{margin-top: 80px;}
-.single-categories{margin-bottom: 50px;text-align: center;}
-.single-categories-bg {
-    position: relative;
-    min-height: 310px;
-    background: #f8f9fc;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    overflow:hidden;
+.categories {padding-top: 90px;}
+
+.categories-flex{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-.single-categories-bg img{
-    width:auto;
-    height:auto;
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
+        
+.categories-content{
+                    display: flex; 
+                    flex-direction: row;
+                    justify-content: space-between;
+                    }
+
+.container-category{
+    background-color: white;
+    height: 250px;
+    width: 250px;
 }
 
-.single-categories-bg-overlay{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(106,119,129,.1);
-    -webkit-transform:scale(0);
-    -moz-transform:scale(0);
-    -ms-transform:scale(0);
-    -o-transform:scale(0);
-    transform:scale(0);
-    -webkit-transition: .3s linear;
-    -moz-transition: .3s linear;
-    -ms-transition: .3s linear;
-    -o-transition: .3s linear;
-    transition: .3s linear;
+.container-category a h1{
+    margin-top: 35%;
+    text-align: center;
 }
 
-.single-categories  h4 a{
-    color:#5f5b57;
-    font-size:16px;
-    font-weight:500;
-    margin:26px 0 12px;
+
+
+.description-category{
+    background-color: #004AAD;
+    text-align: center;
+}
+
+
+.description-category p{
+    color: white;
+    
 }
 
 /*-------------------------------------
         Featured
 --------------------------------------*/
-.feature {padding:110px 0 0px;}
-
-.feature-content,.blog-content{margin-top: 75px;}
-.single-feature,.single-blog {margin-bottom:30px;}
-
-/*.single-feature-txt */
-.single-feature-txt,.single-blog-txt{margin-top: 25px;}
-.single-feature-txt p i {
-    color:  #efce4a;
-    margin-left:  5px;
+.description{
+    display: flex;
+    justify-content: space-between;
+    background-color: #004AAD;
+    padding: 0 10px;
 }
-span.spacial-feature-icon i {color:  #a9a9a9;}
-span.feature-review {margin-left: 10px;}
-.single-feature-txt p {font-size: 14px;}
-.single-feature-txt h3 a ,.single-blog-txt h2 a{
-    color: #5f5b57;
-    margin: 10px 0px 15px;
-}
-.single-feature-txt h5 {
-    color:  #5f5b57;
-    font-weight:  400;
-}
-/*.single-feature-txt */
 
+.description p{
+    color: white;
+}
 
 /*-------------------------------------
         News-letter
 --------------------------------------*/
-.newsletter{padding:120px 0 75px;}
+.newsletter{padding:120px 0 75px; background-color: white;}
 
 .hm-footer-widget{margin-bottom: 30px;}
 .hm-foot-title h4 {
@@ -236,7 +214,7 @@ span.feature-review {margin-left: 10px;}
     margin-bottom: 45px;
 }
 .hm-foot-menu ul li a {
-    color: #a09e9c;
+    color: #84adfa;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 15px;
@@ -268,12 +246,12 @@ span.feature-review {margin-left: 10px;}
     display: block;
     padding:25px 15px;
     outline:0!important;
-    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    box-shadow:0 5px 15px #004AAD;
     border:0;
 }
 .foot-email-box input[type="text"]{
     font-size: 14px;
-    color: #bcb7b2;
+    color: #004AAD;
 }
 .foot-email-subscribe {
     position: absolute;
@@ -282,14 +260,14 @@ span.feature-review {margin-left: 10px;}
     width: 50px;
     height: 100%;
     background: transparent;
-    color: #dfd2c3;
+    color: #84adfa;
     font-size: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .foot-email-box .form-control:hover{
-    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    box-shadow:0 5px 15px #004AAD;
 }
 /*hm-foot-email*/
 
