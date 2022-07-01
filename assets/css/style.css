@@ -15,21 +15,15 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 	color:#a09e9c;
-	background: #dfd2c3;
+	background: linear-gradient(to bottom, #B4CEFF 0%, #004AAD 100%);
     text-transform: capitalize;
     max-width:1920px;
+    width: 100%;
+    height: 100%;
     margin:0 auto;
 	overflow-x:hidden;
 }
 
-a,a:hover,a:active,a:focus {
-	display:inline-block;
-	text-decoration:none;
-	color: #616060;
-	font-size:16px;
-	padding:0;
-    font-weight: 500;
-}
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
 	color:#5f5b57;
@@ -66,86 +60,81 @@ html,body{height: 100%;}
 .section-header h2{
     font-size: 30px;
     font-weight: 500;
-}
+}   
 .section-header h2 span{text-transform: lowercase;}
 /* section-header */
 
 /*=============Style css==========*/
-
 /*-------------------------------------
-        2. Top-area
+        Header e navbar
 --------------------------------------*/
-
-img.logo{
-    width: 5vh;
-    height: 5vh;
-}
-
-/*badge*/
-/*.badge*/
-
-
-/*-------------------------------------
-        3.  Welcome-hero
---------------------------------------*/
-.welcome-hero {
-    position: relative;
-    z-index: 1;
-    background: #f8f9fd;
-}
-.header-area{position: absolute;top:0;left:0;width: 100%;z-index: 99;}
-.single-slide-item{
-    position: relative;
-    background-size: cover;
-    background-position: center;
-}
-.single-slide-item.slide1{background:transparent;}
-.single-slide-item.slide2{background:transparent;}
-.single-slide-item.slide3{background:transparent;}
-
-/*welcome-hero-content*/
-.single-welcome-hero{
+.header-1 {
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 920px;
-}
-.welcome-hero-txt h4 {
-    color: #998d80;
-    font-size: 24px;
-    font-weight: 400;
-}
-.welcome-hero-txt h2 {
-    font-size: 48px;
-    color: #616060;
-    font-weight: 400;
-    margin: 20px 0 22px;
-}
-.welcome-hero-txt p{margin: 35px 0 20px;}
-.welcome-hero-txt .packages-price p {
-    margin: 0;
-    padding-left: 35px;
-}
-.packages-price p:before {
-    position:  absolute;
-    content:  "";
-    width:  25px;
-    height:  1px;
-    background:  #616060;
-    top: 45%;
-    left: 0;
 }
 
-/*welcome-hero-content*/
+.logo{
+    margin: 0 auto;
+    padding: 10px;
+    
+}
+
+main{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.navbar-nav li{
+	text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+
+.navbar-nav li a{
+	color: #fff;
+}
+
+.navbar-nav li a:hover{
+	color: #004AAD;
+}
+
+.navbar-nav .nav-link.active{
+    color: #004AAD;
+}
+
+.dropdown-menu{
+    background-color: #004AAD;
+}
+
+.dropdown-menu li a:hover{
+    background-color: transparent;
+    color: #B4CEFF;
+}
+
+.dropdown-divider{
+   background-color: #B4CEFF;
+}
+
+.bg-navbar{
+    background-color: #B4CEFF;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+
 
 
 /*-------------------------------------
-        5. Categories
+       Categories
 --------------------------------------*/
 .categories {padding:85px 0 70px;}
 .categories-content{margin-top: 80px;}
-
 .single-categories{margin-bottom: 50px;text-align: center;}
 .single-categories-bg {
     position: relative;
@@ -194,7 +183,7 @@ img.logo{
 }
 
 /*-------------------------------------
-        7. Featured
+        Featured
 --------------------------------------*/
 .feature {padding:110px 0 0px;}
 
@@ -222,7 +211,7 @@ span.feature-review {margin-left: 10px;}
 
 
 /*-------------------------------------
-        10. News-letter
+        News-letter
 --------------------------------------*/
 .newsletter{padding:120px 0 75px;}
 
@@ -292,29 +281,80 @@ span.feature-review {margin-left: 10px;}
 
 
 /*-------------------------------------
-        11. Footer
+        Footer
 --------------------------------------*/
-.footer {
-    background: #f8f9fd;
+    .copyright-text {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    font-size:14px;
+    color: #004AAD;
+  }
+  
+  .flex { /*Flexbox for containers*/
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 154px;
-}
-.hm-footer-copyright p,.hm-footer-copyright p a {
-    color: #a5adb3;
-    font-size: 14px;
-    font-weight: 400;
-}
-.footer-social a i {
-    color: #a4aaaf;
-    margin: 0 18px 24px 0;
-    -webkit-transition: .3s; 
-    -moz-transition:.3s; 
-    -ms-transition:.3s; 
-    -o-transition:.3s;
-    transition: .3s;
-}
-.footer-social i:hover{color: #dfd2c3;}
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:10vh;
+    text-align:center;
+    background-color: #B4CEFF;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
 
 /*----------------------------------------------------------------------------------
 ESCREVE O CSS APARTIR DAQUI*/
