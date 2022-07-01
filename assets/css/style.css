@@ -15,7 +15,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
 	color:#a09e9c;
-	background: linear-gradient(to bottom, #B4CEFF 0%, #004AAD 100%);
+	background: #d6e4ff;
     text-transform: capitalize;
     max-width:1920px;
     width: 100%;
@@ -126,9 +126,23 @@ main{
 .nav-item{
     margin-left: 20px;
 }
+/*-------------------------------------
+       Introduction
+--------------------------------------*/
+.introduction{
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    padding: 7%;
+}
 
+.carousel img{
+    margin: 0 auto;
+}
 
-
+.carousel-item{
+    padding-bottom: 150px;
+}
 
 /*-------------------------------------
        Categories
