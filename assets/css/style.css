@@ -225,7 +225,7 @@ main{
     transition: .3s;
 }
 .hm-foot-menu ul li a:hover{
-    color: #fff;
+    color: #004AAD;
     -webkit-transform:translateX(10px);
     -moz-transform:translateX(10px);
     -ms-transform:translateX(10px);
