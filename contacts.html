@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>LŪNA</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <meta name="description" content="Fashion Shop">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--Navbar-->
+		<header class="menu-principal">
+			<main>
+				<div class="header-1">
+					<div class="logo">
+						<a href="index.html"> <img src="assets/logo/logo.png" width="40" /> </a>
+					</div>
+				</div>
+			</main>
+		</header>
+
+		<nav class="navbar navbar-expand-lg bg-navbar sticky-top">
+				<div class="container-fluid">
+				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="#">About sustainability</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="contacts.html">Contact us</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						  Shop
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						  <li><a class="dropdown-item" href="shop/men.html">MEN</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="shop/women.html">WOMEN</a></li>
+						  <li><hr class="dropdown-divider"></li>
+						  <li><a class="dropdown-item" href="shop/kids.html">KIDS</a></li>
+						</ul>
+					  </li>
+					</ul>
+				<!--	<form class="d-flex" role="search">
+					  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					  <button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+					-->
+				  </div>
+				</div>
+		</nav>
+	<!--Fim da navbar-->
+
+    <!-- body -->
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
+          </div>
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>CONTACT</span>
+                <span>US</span>
+              </div>
+              <div class="app-contact">CONTACT INFO : +351 289 272 297</div>
+            </div>
+            <div class="screen-body-item">
+              <!-- form -->
+              <form name="myform" class="app-form" onsubmit="return validateform()">
+                <div class="app-form-group">
+                  <input class="app-form-control" type="text" name="name" placeholder="NAME">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" type="text" name="email" placeholder="EMAIL">
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="CONTACT NO">
+                </div>
+                <div class="app-form-group message">
+                  <input class="app-form-control" type="text" name="message" placeholder="MESSAGE">
+                </div>
+                <div class="app-form-group buttons">
+                  <input class="app-form-buttons" type="reset" value="CANCEL">  
+                  <input class="app-form-buttons" type="submit" value="SUBMIT"> 
+                </div>
+              </form>
+              <!-- form end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- body end -->
+
+    <!-- footer -->
+    <!--Waves Container-->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18
+            88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0"
+            fill="rgba(180,206,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3"
+            fill="rgba(180,206,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5"
+            fill="rgba(180,206,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#B4CEFF" />
+        </g>
+      </svg>
+    </div>
+    <!--Waves end-->
+
+            <!--Content starts-->
+            <div class="content flex">
+              <p>&copy;Copyright. designed and developed by Laura and Joana</p>
+            </div>
+            <!--Content ends-->
+            <!-- footer end -->
+            <!-- ======== scroll-top ======== -->
+    <!-- scroll-top  
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a> -->
+
+    <script src="/assets/scripts/main.js"></script> 
+  </body>
+</html>
