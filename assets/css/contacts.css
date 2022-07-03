@@ -1,0 +1,288 @@
+/*-------------------------------------
+                Form
+--------------------------------------*/
+input {
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.background {
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+}
+
+.screen {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #004AAD;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+    margin-right: auto;
+}
+
+.screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+}
+
+.screen-header-button.close {
+    background: #B4CEFF;
+}
+
+.screen-header-button.maximize {
+    background: #5A8CD6;
+}
+
+.screen-header-button.minimize {
+    background: #3C76C8;
+}
+
+.screen-header-right {
+    display: flex;
+}
+
+.screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #B4CEFF;
+}
+
+.screen-body {
+    display: flex;
+}
+
+.screen-body-item {
+    flex: 1;
+    padding: 50px;
+}
+
+.screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #004AAD;
+    font-size: 26px;
+}
+
+.app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: #B4CEFF;
+}
+
+.app-contact {
+    margin-top: auto;
+    font-size: 10px;
+    color: #004AAD;
+}
+
+.app-form-group {
+    margin-bottom: 15px;
+}
+
+.app-form-group.message {
+    margin-top: 40px;
+}
+
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #004AAD;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+    color: var(--c, #999);
+}
+
+.app-form-control:focus {
+    border-bottom-color: #004AAD;
+    color: black;
+}
+
+.app-form-buttons {
+    background: transparent;
+    font-weight: bold;
+    border: none;
+    color: #999;
+}
+
+.app-form-buttons:hover {
+    color: #004AAD;
+}
+
+.dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+/*RESPONSIVENESS*/
+@media screen and (max-width: 520px) {
+    .screen-body {
+        flex-direction: column;
+    }
+
+    .screen-body-item.left {
+        margin-bottom: 30px;
+    }
+
+    .app-title {
+        flex-direction: row;
+    }
+
+    .app-title span {
+        margin-right: 12px;
+    }
+
+    .app-title:after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .categories-content {
+        row-gap: 100px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .whitespace {
+        margin-top: 5%;
+    }
+
+    .big-container {
+        height: 180%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .whitespace {
+        display: none;
+    }
+
+    .big-container {
+        height: 180%;
+    }
+
+    .waves {
+        margin-top: 70%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .whitespace {
+        display: none;
+    }
+
+    .big-container {
+        height: 180%;
+    }
+
+    .waves {
+        margin-top: 80%;
+    }
+}
+
+@media only screen and (max-width: 984px) {
+    .whitespace {
+        display: none;
+    }
+
+    .waves {
+        margin-top: 300%;
+    }
+}
+
+@media only screen and (max-width: 808px) {
+    .whitespace {
+        display: none;
+    }
+
+    .waves {
+        margin-top: 500%;
+    }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+        padding: 40px;
+    }
+
+    .screen-body-item {
+        padding: 0;
+    }
+}

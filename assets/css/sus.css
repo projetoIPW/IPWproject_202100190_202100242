@@ -12,6 +12,7 @@
   
   .product-img img {
     border-radius: 7px 0 0 7px;
+    height: 500px;
   }
   
   .product-info {
@@ -24,10 +25,11 @@
   }
   
   .product-text h1 {
+    font-weight: bold;
     margin: 0 0 0 38px;
     padding-top: 52px;
     font-size: 34px;
-    color: #004AAD;
+    color: #474747;
   }
   
   .product-text h2 {
@@ -35,15 +37,15 @@
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #84adfa;
+    color: #d2d2d2;
     letter-spacing: 0.2em;
   }
   
   .product-text p {
     text-transform: none;
-    height: 130px;
+    height: 200px;
     margin: 0 0 0 38px;
-    color: black;
+    color: #8d8d8d;
     line-height: 1.7em;
     font-size: 18px;
     font-weight: lighter;
@@ -51,8 +53,6 @@
   }
   
   .product-price-btn {
-    margin-top: 70px;
-    position: relative;
     text-align: center;
   }
   
@@ -83,13 +83,16 @@
   .learn h1 {
     text-align: center;
     margin-top: 50px;
-    color: #004AAD;
-  }
+    color: rgba(0, 74, 173, 0.5);
+    font-weight: bold;
+    font-size: 24px;
+}
   
   .big-container-sus {
     display: flex;
     flex-flow: wrap;
     margin-top: 10px;
+    margin-right: 1%;
     row-gap: 50px;
   }
   
@@ -129,12 +132,13 @@
   }
   
   .h1 {
-    color: #004AAD;
+    color: black;
     margin: auto;
     text-align: left;
     margin-top: 240px;
     padding-left: 30px;
     font-size: 24px;
+    font-weight: bold;
   }
   
   .square p {
@@ -142,15 +146,16 @@
     padding-left: 30px;
     padding-right: 30px;
     font-size: 12px;
-    color: black;
+    color: #757474;
     line-height: 18px;
     text-transform: none;
+    font-weight: bold;
   }
   
   .button {
     background-color: rgba(0, 74, 173, 0.5);
     color: white;
-    width: 90px;
+    width: 150px;
     padding: 10px 18px;
     border-radius: 3px;
     text-align: center;
@@ -162,6 +167,7 @@
     margin-bottom: 10px;
     font-size: 12px;
     cursor: pointer;
+    font-weight: bold;
   }
   
   /*-------------------------------------
@@ -177,7 +183,7 @@
   .blockquote {
      position: relative;
      font-weight: 50;
-     color: #004AAD;
+     color: white;
      padding: 30px 0;
      width: 100%;
      max-width: 1000px;
@@ -191,7 +197,7 @@
   /* Blockquote header */
   .blockquote h1 {
      position: relative;
-     color: #004AAD;
+     color: white;
      font-size: 20px;
      font-weight: 800;
      line-height: 1;
@@ -202,7 +208,7 @@
   .blockquote:after {
      position: absolute;
      content: "”";
-     color: #004AAD;
+     color: white;
      font-size: 10rem;
      line-height: 0;
      bottom: -43px;
@@ -221,7 +227,7 @@
   /* Blockquote subheader */
   .blockquote h4 {
      position: relative;
-     color: #fff;
+     color: black;
      font-size: 1.4rem;
      font-weight: normal;
      line-height: 1;
@@ -230,22 +236,64 @@
      z-index: 1;
   }
 
-  #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #004AAD; /* Set a background color */
-    color: #B4CEFF; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+  @media only screen and (max-width: 1100px) {
+
+    .product-info {
+      height: 600px;
+    }
+    .product-img img {
+      height: 600px;
+    }
+    .product-text p {
+      
+      height: 230px;
+    }
+
   }
+
+  @media only screen and (max-width: 964px) {
+    .product-info {
+      height: 600px;
+    }
+
+    .product-text p {
+      height: 280px;
+    }
+    
+    .product-img img {
+      height: 600px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .product-info {
+      height: 700px;
+    }
+
+    .product-text p {
+      height: 350px;
+    }
+    
+    .product-img img {
+      height: 700px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .product-info {
+      height: 800px;
+      width: 100000px;
+      float: none;
+    }
+
+    .product-text p {
+      height: 400px;
+    }
+    
+    .product-img img {
+      display: none;
+      float: none;
+    }
+  }
+
   
-  #myBtn:hover {
-    background-color: rgba(0, 74, 173, 0.5); /* Add a dark-grey background on hover */
-  }
