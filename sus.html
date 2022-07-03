@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/sus.css">
 <link rel="shortcut icon" type="image/icon" href="assets/logo/logo.png"/>
-<title>Lūna</title>
+<title>Lūna - About Sustainability</title>
 
 </head>
 
@@ -28,8 +28,7 @@
       </div>
     </main>
   </header>
-
-  <nav class="navbar navbar-expand-lg bg-navbar sticky-top">
+  <nav class="navbar navbar-expand-lg bg-navbar ">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -68,32 +67,33 @@
   </nav>
 <!--Fim da navbar-->
 
+<main>
   <!-- body -->
   <!-- banner -->
-  <div class="wrapper">
-    <div class="product-img">
+  <article class="wrapper">
+    <section class="product-img">
       <img src="assets/images/leaf.jpg" height="800px" width="800px">
-    </div>
-    <div class="product-info">
-      <div class="product-text">
+    </section>
+    <section class="product-info">
+      <section class="product-text">
         <h1>What Does It Mean For Fashion To Be Sustainable?</h1>
         <h2>Sustainability</h2>
         <p>Fashion history books are full of detailed descriptions of past periods of dress, notable trends, and
           significant garments. It makes sense that we are longing for the same deeper understanding with this current
           slow fashion movement, yet fashion history commentary was only made possible in retrospect.</p>
-      </div>
-      <div class="product-price-btn">
+      </section>
+      <section class="product-price-btn">
         <a href="#footer" class="button" type="button">Read More</a>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </article>
   <!-- banner end -->
 
   <!-- container -->
-  <div class="learn">
+  <article class="learn">
     <h1>TO LEARN MORE</h1>
-    <div class="big-container">
-      <div class="container">
+    <section class="big-container-sus">
+      <section class="container-sus">
         <div class="square">
           <img src="assets/images/countries.jpg" class="mask">
           <div class="h1">Most Sustainable Countries</div>
@@ -104,8 +104,8 @@
           <div><a href="https://www.usnews.com/news/best-countries/most-sustainable-countries" target="_blank"
               class="button">Read More</a></div>
         </div>
-      </div>
-      <div class="container">
+      </section>
+      <section class="container-sus">
         <div class="square">
           <img src="assets/images/brands.jpg" class="mask">
           <div class="h1">Sustainable Clothing Brands</div>
@@ -117,8 +117,8 @@
           <div><a href="https://www.thegoodtrade.com/features/fair-trade-clothing" target="_blank" class="button">Read
               More</a></div>
         </div>
-      </div>
-      <div class="container">
+      </section>
+      <section class="container-sus">
         <div class="square">
           <img src="assets/images/sustainability.jpg" class="mask">
           <div class="h1">What is sustainability?</div>
@@ -127,20 +127,19 @@
             example of environmental sustainability. A key concern is the sustainability of our water.</p>
           <div><a href="https://greencoast.org/sustainability/" target="_blank" class="button">Read More</a></div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </article>
   <!-- container end -->
-  <div class="blockquote-wrapper">
+  <section class="blockquote-wrapper">
     <div class="blockquote">
       <h1 class="h1">"Sustainability is a political choice, not a technical one. It's not a question of whether we can be sustainable, but whether we choose to be."</h1>
       <h4>&mdash; Gary Lawrence</h4>
     </div>
-  </div>
+  </section>
   <!-- body end -->
 
   <!-- footer -->
-  <!-- waves -->
   <div>
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -156,18 +155,42 @@
       </g>
     </svg>
   </div>
-  <!-- waves end -->
+</main>
   <!-- content -->
-  <div class="content flex" id="footer">
+  
+	<!--footer start-->
+  <footer>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18
+        88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0"
+            fill="rgba(180,206,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3"
+            fill="rgba(180,206,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5"
+            fill="rgba(180,206,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#B4CEFF" />
+    </g>
+    </svg>
+</div>
+
+<!--Waves end-->
+<!--Content starts-->
+<div class="content flex">
     <p class="copyright-text">&copy;Copyright. designed and developed by Laura and Joana</p>
-  </div>
-  <!-- content end -->
-  <!-- footer end -->
+</footer>
+<!-- footer end -->
 
   <!-- scroll-top  
     <a href="#" class="scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
     </a> -->
+  
   <script>
     mybutton = document.getElementById("myBtn");
     window.onscroll = function () { scrollFunction() };
