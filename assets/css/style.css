@@ -178,8 +178,6 @@ main{
     text-align: center;
 }
 
-
-
 .description-category{
     background-color: #004AAD;
     text-align: center;
@@ -214,7 +212,7 @@ main{
         Footer
 --------------------------------------*/
     .copyright-text {
-    font-family: 'Lato', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     letter-spacing: 1px;
     font-size:14px;
     color: #004AAD;
@@ -289,7 +287,7 @@ main{
 
 /*----------------------------------------------------------------------------------
 /*-------------------------------------
-        WOMEN.html
+        SHOPS
 --------------------------------------*/
 
 /*----------------------------------------------------------------------------------*/
@@ -339,6 +337,7 @@ main{
 
  .shop-navbar a{
     display: block;
+    margin-bottom: 4px;
  }
 
  .clothes-container{
@@ -404,7 +403,7 @@ main{
   
   .screen {
     position: relative;
-    background: #3e3e3e;
+    background: white;
     border-radius: 15px;
   }
   
@@ -417,7 +416,7 @@ main{
     right: 20px;
     bottom: 0;
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    box-shadow: 0 20px 40px #B4CEFF;
     z-index: -1;
   }
   
@@ -425,7 +424,7 @@ main{
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background: #4d4d4f;
+    background: #004AAD;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
@@ -464,7 +463,7 @@ main{
     height: 3px;
     margin-left: 2px;
     border-radius: 8px;
-    background: #999;
+    background: #B4CEFF;
   }
   
   .screen-body {
@@ -485,7 +484,7 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #B4CEFF;
+    color: #004AAD;
     font-size: 26px;
   }
   
@@ -503,7 +502,7 @@ main{
   .app-contact {
     margin-top: auto;
     font-size: 10px;
-    color: #B4CEFF;
+    color: #004AAD;
   }
   
   .app-form-group {
@@ -525,7 +524,7 @@ main{
     background: none;
     border: none;
     border-bottom: 1px solid #666;
-    color: #B4CEFF;
+    color: #666;
     font-size: 14px;
     text-transform: uppercase;
     outline: none;
@@ -538,7 +537,7 @@ main{
   
   .app-form-control:focus {
     border-bottom-color: #B4CEFF;
-    color: white;
+    color: #004AAD;
   }
   
   .app-form-button {
@@ -554,7 +553,7 @@ main{
     background: transparent;
     font-weight: bold;
     border: none;
-    color: #666;
+    color: #004AAD;
   }
   
   .app-form-buttons:hover {
@@ -599,3 +598,8 @@ main{
     }
   }
   /* contacts-end*/
+
+  /*sustainibility*/
+  /*-------------------------------------
+                Banner
+--------------------------------------*/

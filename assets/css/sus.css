@@ -1,0 +1,228 @@
+.wrapper {
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  .product-img {
+    float: left;
+    height: 500px;
+    width: 600px;
+    margin-left: 50px;
+  }
+  
+  .product-img img {
+    border-radius: 7px 0 0 7px;
+  }
+  
+  .product-info {
+    margin-right: 50px;
+    float: right;
+    height: 500px;
+    width: 789px;
+    border-radius: 0 7px 10px 0;
+    background-color: #ffffff;
+  }
+  
+  .product-text h1 {
+    margin: 0 0 0 38px;
+    padding-top: 52px;
+    font-size: 34px;
+    color: #004AAD;
+  }
+  
+  .product-text h2 {
+    margin: 0 0 47px 38px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #84adfa;
+    letter-spacing: 0.2em;
+  }
+  
+  .product-text p {
+    text-transform: none;
+    height: 130px;
+    margin: 0 0 0 38px;
+    color: black;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
+  .product-price-btn {
+    margin-top: 70px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .product-price-btn .button {
+    display: inline-block;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: rgba(0, 74, 173, 0.5);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .product-price-btn .button:hover {
+    background-color: #B4CEFF;
+  }
+  
+  /*-------------------------------------
+                Container
+  --------------------------------------*/
+  .learn h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #004AAD;
+  }
+  
+  .big-container {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .square:hover {
+    -webkit-transform: translate(20px, -10px);
+    -ms-transform: translate(10px, -10px);
+    transform: translate(10px, -10px);
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  }
+  
+  .square {
+    margin-left: 50px;
+    width: 427px;
+    height: 450px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .mask {
+    clip: rect(0px, 460px, 220px, 0px);
+    border-radius: 4px;
+    position: absolute;
+  }
+  
+  .square img {
+    width: 427px;
+  }
+  
+  .h1 {
+    color: #004AAD;
+    margin: auto;
+    text-align: left;
+    margin-top: 240px;
+    padding-left: 30px;
+    font-size: 24px;
+  }
+  
+  .square p {
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    color: black;
+    line-height: 18px;
+    text-transform: none;
+  }
+  
+  .button {
+    background-color: rgba(0, 74, 173, 0.5);
+    color: white;
+    width: 90px;
+    padding: 10px 18px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  /*-------------------------------------
+                Quote
+  --------------------------------------*/
+  .blockquote-wrapper {
+    display: flex;
+    height: 500px;
+    padding: 0 20px;
+  }
+  
+  /* Blockquote main style */
+  .blockquote {
+     position: relative;
+     font-weight: 50;
+     color: #004AAD;
+     padding: 30px 0;
+     width: 100%;
+     max-width: 1000px;
+     z-index: 1;
+     margin: 80px auto;
+     align-self: center;
+     border-top: solid 1px;
+     border-bottom: solid 1px;
+  }
+  
+  /* Blockquote header */
+  .blockquote h1 {
+     position: relative;
+     color: #004AAD;
+     font-size: 20px;
+     font-weight: 800;
+     line-height: 1;
+     margin: 0;
+  }
+  
+  /* Blockquote right double quotes */
+  .blockquote:after {
+     position: absolute;
+     content: "”";
+     color: #004AAD;
+     font-size: 10rem;
+     line-height: 0;
+     bottom: -43px;
+     right: 30px;
+  }
+  
+  /* increase header size after 600px */
+  @media all and (min-width: 600px) {
+     .blockquote h1 {
+         font-size: 40px;
+    }
+  
+  }
+  
+  /* Blockquote subheader */
+  .blockquote h4 {
+     position: relative;
+     color: #fff;
+     font-size: 1.4rem;
+     font-weight: normal;
+     line-height: 1;
+     margin: 0;
+     padding-top: 20px;
+     z-index: 1;
+  }
