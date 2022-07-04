@@ -17,7 +17,9 @@
 		
     </head>
 	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<!--Navbar-->
+	
 		<header class="menu-principal">
 			<main>
 				<div class="header-1">
@@ -256,6 +258,19 @@
 	</footer>
     <!-- footer end -->
     <!--Os scripts ficam sempre antes da tag body acabar-->
+	<script>
+		mybutton = document.getElementById("myBtn");
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+	</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+	<script src="../../assets/scripts/main.js"></script>
     </body>

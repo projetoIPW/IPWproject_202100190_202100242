@@ -98,7 +98,8 @@
   
   .container-sus {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-flow: wrap;
   }
   
   .square:hover {
